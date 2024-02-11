@@ -27,7 +27,6 @@ public class NameController {
             @ApiResponse(responseCode = "200", description = "OK"),
             @ApiResponse(responseCode = "400", description = "Bad Request")
     })
-    
     public String nameChange(@RequestParam String name){
         return new StringBuilder(name).reverse().toString();
     }
